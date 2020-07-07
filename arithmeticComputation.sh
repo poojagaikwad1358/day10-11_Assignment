@@ -7,3 +7,5 @@ read b
 read c
 operation1=$((a+b*c));
 echo $operation1
+operation2=$((a*b+c));
+echo $operation2
