@@ -6,6 +6,11 @@ read a
 read b
 read c
 operation1=$((a+b*c));
-echo $operation1
+echo $operation1;
+
 operation2=$((a*b+c));
-echo $operation2
+echo $operation2;
+
+operation3=$((c+a/b));
+echo $operation3;
+
