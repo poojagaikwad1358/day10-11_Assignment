@@ -29,5 +29,7 @@ do
 	array[(($i))]=${arithmetic[(($i))]}
 done
 
-echo Dictionary Array: ${array[@]}
+echo "Dictionary Array: " ${array[@]}
 
+sortDecending=$(printf '%s\n' "${array[@]}" | sort -r )
+echo "Dictionary data in decending order: " $sortDecending
