@@ -33,3 +33,6 @@ echo "Dictionary Array: " ${array[@]}
 
 sortDecending=$(printf '%s\n' "${array[@]}" | sort -r )
 echo "Dictionary data in decending order: " $sortDecending
+
+sortAscending=$(printf '%s\n' "${array[@]}" | sort -n )
+echo "Dictionary data in Ascending order: " $sortAscending
