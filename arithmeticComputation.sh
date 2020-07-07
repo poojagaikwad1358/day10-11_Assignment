@@ -14,3 +14,5 @@ echo $operation2;
 operation3=$((c+a/b));
 echo $operation3;
 
+operation4=$((a%b+c));
+echo $operation4;
