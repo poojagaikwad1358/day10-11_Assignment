@@ -18,10 +18,15 @@ echo $operation3;
 operation4=$((a%b+c));
 echo $operation4;
 
-arithmetic[temp1]=$operation1;
-arithmetic[temp2]=$operation2;
-arithmetic[temp3]=$operation3;
-arithmetic[temp4]=$operation4;
-
+for(( i=1;i<=4;i++ ))
+do
+	arithmetic[(($i))]=$((operation$i))
+done
 echo "Dictionary: " ${arithmetic[@]}
 
+for(( i=1;i<=4;i++ ))
+do
+	array[(($i))]=${arithmetic[(($i))]}
+done
+
+echo Dictionary Array: ${array[@]}
