@@ -23,3 +23,13 @@ do
 	arithmetic[(($i))]=$((operation$i))
 done
 echo "Dictionary: " ${arithmetic[@]}
+<<<<<<< HEAD
+=======
+
+for(( i=1;i<=4;i++ ))
+do
+	array[(($i))]=${arithmetic[(($i))]}
+done
+
+echo Dictionary Array: ${array[@]}
+>>>>>>> UseCase7-DictionaryArray
